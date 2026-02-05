@@ -17,6 +17,9 @@ void file_save(struct DTkL* buflist, const char* PATH)
     return;
   }
 
+  char buf[2048];
+  memset(buf, 0, sizeof(buf));
+
   FILE* pfile = fopen(PATH, "a");
   if(pfile == NULL)
   {
@@ -26,7 +29,10 @@ void file_save(struct DTkL* buflist, const char* PATH)
 
   for (struct DTk* iter = buflist->head; iter != NULL; iter = iter->next) 
   {
+    memcpy(buf, iter->ct, strnlen(iter->ct, sizeof(buf)));
+    iter->ct[strcspn(iter->ct, "\0")] = '\n';
     fputs(iter->ct, pfile);
+    memset(buf, 0, sizeof(buf));
   }
 
   fclose(pfile);
