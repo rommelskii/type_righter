@@ -1,8 +1,0 @@
-{
-	"InstallScripts" : 
-	[
-		"/Users/mels/projects/type_righter/build/cmake_install.cmake",
-		"/Users/mels/projects/type_righter/build/src/cmake_install.cmake"
-	],
-	"Parallel" : false
-}
