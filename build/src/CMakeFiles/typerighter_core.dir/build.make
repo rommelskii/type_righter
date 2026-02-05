@@ -86,17 +86,33 @@ src/CMakeFiles/typerighter_core.dir/dtk.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/typerighter_core.dir/dtk.c.s"
 	cd /Users/mels/projects/type_righter/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/mels/projects/type_righter/src/dtk.c -o CMakeFiles/typerighter_core.dir/dtk.c.s
 
+src/CMakeFiles/typerighter_core.dir/stream_utils.c.o: src/CMakeFiles/typerighter_core.dir/flags.make
+src/CMakeFiles/typerighter_core.dir/stream_utils.c.o: /Users/mels/projects/type_righter/src/stream_utils.c
+src/CMakeFiles/typerighter_core.dir/stream_utils.c.o: src/CMakeFiles/typerighter_core.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/mels/projects/type_righter/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object src/CMakeFiles/typerighter_core.dir/stream_utils.c.o"
+	cd /Users/mels/projects/type_righter/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/typerighter_core.dir/stream_utils.c.o -MF CMakeFiles/typerighter_core.dir/stream_utils.c.o.d -o CMakeFiles/typerighter_core.dir/stream_utils.c.o -c /Users/mels/projects/type_righter/src/stream_utils.c
+
+src/CMakeFiles/typerighter_core.dir/stream_utils.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/typerighter_core.dir/stream_utils.c.i"
+	cd /Users/mels/projects/type_righter/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/mels/projects/type_righter/src/stream_utils.c > CMakeFiles/typerighter_core.dir/stream_utils.c.i
+
+src/CMakeFiles/typerighter_core.dir/stream_utils.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/typerighter_core.dir/stream_utils.c.s"
+	cd /Users/mels/projects/type_righter/build/src && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/mels/projects/type_righter/src/stream_utils.c -o CMakeFiles/typerighter_core.dir/stream_utils.c.s
+
 # Object files for target typerighter_core
 typerighter_core_OBJECTS = \
-"CMakeFiles/typerighter_core.dir/dtk.c.o"
+"CMakeFiles/typerighter_core.dir/dtk.c.o" \
+"CMakeFiles/typerighter_core.dir/stream_utils.c.o"
 
 # External object files for target typerighter_core
 typerighter_core_EXTERNAL_OBJECTS =
 
 /Users/mels/projects/type_righter/lib/libtyperighter_core.a: src/CMakeFiles/typerighter_core.dir/dtk.c.o
+/Users/mels/projects/type_righter/lib/libtyperighter_core.a: src/CMakeFiles/typerighter_core.dir/stream_utils.c.o
 /Users/mels/projects/type_righter/lib/libtyperighter_core.a: src/CMakeFiles/typerighter_core.dir/build.make
 /Users/mels/projects/type_righter/lib/libtyperighter_core.a: src/CMakeFiles/typerighter_core.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/mels/projects/type_righter/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C static library /Users/mels/projects/type_righter/lib/libtyperighter_core.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/mels/projects/type_righter/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C static library /Users/mels/projects/type_righter/lib/libtyperighter_core.a"
 	cd /Users/mels/projects/type_righter/build/src && $(CMAKE_COMMAND) -P CMakeFiles/typerighter_core.dir/cmake_clean_target.cmake
 	cd /Users/mels/projects/type_righter/build/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/typerighter_core.dir/link.txt --verbose=$(VERBOSE)
 

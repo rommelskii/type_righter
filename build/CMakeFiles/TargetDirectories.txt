@@ -2,7 +2,7 @@
 /Users/mels/projects/type_righter/build/CMakeFiles/edit_cache.dir
 /Users/mels/projects/type_righter/build/CMakeFiles/rebuild_cache.dir
 /Users/mels/projects/type_righter/build/src/CMakeFiles/typerighter_core.dir
-/Users/mels/projects/type_righter/build/src/CMakeFiles/main.dir
+/Users/mels/projects/type_righter/build/src/CMakeFiles/tpr_write.dir
 /Users/mels/projects/type_righter/build/src/CMakeFiles/test.dir
 /Users/mels/projects/type_righter/build/src/CMakeFiles/edit_cache.dir
 /Users/mels/projects/type_righter/build/src/CMakeFiles/rebuild_cache.dir

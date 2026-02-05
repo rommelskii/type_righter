@@ -3,6 +3,8 @@ file(REMOVE_RECURSE
   "/Users/mels/projects/type_righter/lib/libtyperighter_core.pdb"
   "CMakeFiles/typerighter_core.dir/dtk.c.o"
   "CMakeFiles/typerighter_core.dir/dtk.c.o.d"
+  "CMakeFiles/typerighter_core.dir/stream_utils.c.o"
+  "CMakeFiles/typerighter_core.dir/stream_utils.c.o.d"
 )
 
 # Per-language clean rules from dependency scanning.

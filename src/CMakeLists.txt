@@ -1,6 +1,6 @@
-add_library(typerighter_core dtk.c)
+add_library(typerighter_core dtk.c stream_utils.c)
 
-set(SOURCES_LIST main.c)
+set(SOURCES_LIST tpr_write.c)
 
 foreach(SOURCE_FILE ${SOURCES_LIST})
   get_filename_component(TARGET_NAME ${SOURCE_FILE} NAME_WE)

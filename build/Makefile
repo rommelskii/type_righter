@@ -140,17 +140,17 @@ typerighter_core/fast:
 .PHONY : typerighter_core/fast
 
 #=============================================================================
-# Target rules for targets named main
+# Target rules for targets named tpr_write
 
 # Build rule for target.
-main: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 main
-.PHONY : main
+tpr_write: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tpr_write
+.PHONY : tpr_write
 
 # fast build rule for target.
-main/fast:
-	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/build
-.PHONY : main/fast
+tpr_write/fast:
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/tpr_write.dir/build.make src/CMakeFiles/tpr_write.dir/build
+.PHONY : tpr_write/fast
 
 # Help Target
 help:
@@ -161,7 +161,7 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... test"
-	@echo "... main"
+	@echo "... tpr_write"
 	@echo "... typerighter_core"
 .PHONY : help
 

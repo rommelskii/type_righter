@@ -141,18 +141,18 @@ typerighter_core/fast:
 .PHONY : typerighter_core/fast
 
 # Convenience name for target.
-src/CMakeFiles/main.dir/rule:
-	cd /Users/mels/projects/type_righter/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/main.dir/rule
-.PHONY : src/CMakeFiles/main.dir/rule
+src/CMakeFiles/tpr_write.dir/rule:
+	cd /Users/mels/projects/type_righter/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/tpr_write.dir/rule
+.PHONY : src/CMakeFiles/tpr_write.dir/rule
 
 # Convenience name for target.
-main: src/CMakeFiles/main.dir/rule
-.PHONY : main
+tpr_write: src/CMakeFiles/tpr_write.dir/rule
+.PHONY : tpr_write
 
 # fast build rule for target.
-main/fast:
-	cd /Users/mels/projects/type_righter/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/build
-.PHONY : main/fast
+tpr_write/fast:
+	cd /Users/mels/projects/type_righter/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/tpr_write.dir/build.make src/CMakeFiles/tpr_write.dir/build
+.PHONY : tpr_write/fast
 
 dtk.o: dtk.c.o
 .PHONY : dtk.o
@@ -178,29 +178,53 @@ dtk.c.s:
 	cd /Users/mels/projects/type_righter/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/typerighter_core.dir/build.make src/CMakeFiles/typerighter_core.dir/dtk.c.s
 .PHONY : dtk.c.s
 
-main.o: main.c.o
-.PHONY : main.o
+stream_utils.o: stream_utils.c.o
+.PHONY : stream_utils.o
 
 # target to build an object file
-main.c.o:
-	cd /Users/mels/projects/type_righter/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/main.c.o
-.PHONY : main.c.o
+stream_utils.c.o:
+	cd /Users/mels/projects/type_righter/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/typerighter_core.dir/build.make src/CMakeFiles/typerighter_core.dir/stream_utils.c.o
+.PHONY : stream_utils.c.o
 
-main.i: main.c.i
-.PHONY : main.i
+stream_utils.i: stream_utils.c.i
+.PHONY : stream_utils.i
 
 # target to preprocess a source file
-main.c.i:
-	cd /Users/mels/projects/type_righter/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/main.c.i
-.PHONY : main.c.i
+stream_utils.c.i:
+	cd /Users/mels/projects/type_righter/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/typerighter_core.dir/build.make src/CMakeFiles/typerighter_core.dir/stream_utils.c.i
+.PHONY : stream_utils.c.i
 
-main.s: main.c.s
-.PHONY : main.s
+stream_utils.s: stream_utils.c.s
+.PHONY : stream_utils.s
 
 # target to generate assembly for a file
-main.c.s:
-	cd /Users/mels/projects/type_righter/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/main.c.s
-.PHONY : main.c.s
+stream_utils.c.s:
+	cd /Users/mels/projects/type_righter/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/typerighter_core.dir/build.make src/CMakeFiles/typerighter_core.dir/stream_utils.c.s
+.PHONY : stream_utils.c.s
+
+tpr_write.o: tpr_write.c.o
+.PHONY : tpr_write.o
+
+# target to build an object file
+tpr_write.c.o:
+	cd /Users/mels/projects/type_righter/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/tpr_write.dir/build.make src/CMakeFiles/tpr_write.dir/tpr_write.c.o
+.PHONY : tpr_write.c.o
+
+tpr_write.i: tpr_write.c.i
+.PHONY : tpr_write.i
+
+# target to preprocess a source file
+tpr_write.c.i:
+	cd /Users/mels/projects/type_righter/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/tpr_write.dir/build.make src/CMakeFiles/tpr_write.dir/tpr_write.c.i
+.PHONY : tpr_write.c.i
+
+tpr_write.s: tpr_write.c.s
+.PHONY : tpr_write.s
+
+# target to generate assembly for a file
+tpr_write.c.s:
+	cd /Users/mels/projects/type_righter/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/tpr_write.dir/build.make src/CMakeFiles/tpr_write.dir/tpr_write.c.s
+.PHONY : tpr_write.c.s
 
 # Help Target
 help:
@@ -211,14 +235,17 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... test"
-	@echo "... main"
+	@echo "... tpr_write"
 	@echo "... typerighter_core"
 	@echo "... dtk.o"
 	@echo "... dtk.i"
 	@echo "... dtk.s"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... stream_utils.o"
+	@echo "... stream_utils.i"
+	@echo "... stream_utils.s"
+	@echo "... tpr_write.o"
+	@echo "... tpr_write.i"
+	@echo "... tpr_write.s"
 .PHONY : help
 
 

@@ -83,12 +83,12 @@ clean: src/clean
 
 # Recursive "all" directory target.
 src/all: src/CMakeFiles/typerighter_core.dir/all
-src/all: src/CMakeFiles/main.dir/all
+src/all: src/CMakeFiles/tpr_write.dir/all
 .PHONY : src/all
 
 # Recursive "codegen" directory target.
 src/codegen: src/CMakeFiles/typerighter_core.dir/codegen
-src/codegen: src/CMakeFiles/main.dir/codegen
+src/codegen: src/CMakeFiles/tpr_write.dir/codegen
 .PHONY : src/codegen
 
 # Recursive "preinstall" directory target.
@@ -97,7 +97,7 @@ src/preinstall:
 
 # Recursive "clean" directory target.
 src/clean: src/CMakeFiles/typerighter_core.dir/clean
-src/clean: src/CMakeFiles/main.dir/clean
+src/clean: src/CMakeFiles/tpr_write.dir/clean
 .PHONY : src/clean
 
 #=============================================================================
@@ -107,12 +107,12 @@ src/clean: src/CMakeFiles/main.dir/clean
 src/CMakeFiles/typerighter_core.dir/all:
 	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/typerighter_core.dir/build.make src/CMakeFiles/typerighter_core.dir/depend
 	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/typerighter_core.dir/build.make src/CMakeFiles/typerighter_core.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/mels/projects/type_righter/build/CMakeFiles --progress-num=3,4 "Built target typerighter_core"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/mels/projects/type_righter/build/CMakeFiles --progress-num=3,4,5 "Built target typerighter_core"
 .PHONY : src/CMakeFiles/typerighter_core.dir/all
 
 # Build rule for subdir invocation for target.
 src/CMakeFiles/typerighter_core.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mels/projects/type_righter/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mels/projects/type_righter/build/CMakeFiles 3
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/typerighter_core.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mels/projects/type_righter/build/CMakeFiles 0
 .PHONY : src/CMakeFiles/typerighter_core.dir/rule
@@ -124,7 +124,7 @@ typerighter_core: src/CMakeFiles/typerighter_core.dir/rule
 # codegen rule for target.
 src/CMakeFiles/typerighter_core.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/typerighter_core.dir/build.make src/CMakeFiles/typerighter_core.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/mels/projects/type_righter/build/CMakeFiles --progress-num=3,4 "Finished codegen for target typerighter_core"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/mels/projects/type_righter/build/CMakeFiles --progress-num=3,4,5 "Finished codegen for target typerighter_core"
 .PHONY : src/CMakeFiles/typerighter_core.dir/codegen
 
 # clean rule for target.
@@ -133,36 +133,36 @@ src/CMakeFiles/typerighter_core.dir/clean:
 .PHONY : src/CMakeFiles/typerighter_core.dir/clean
 
 #=============================================================================
-# Target rules for target src/CMakeFiles/main.dir
+# Target rules for target src/CMakeFiles/tpr_write.dir
 
 # All Build rule for target.
-src/CMakeFiles/main.dir/all: src/CMakeFiles/typerighter_core.dir/all
-	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/depend
-	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/mels/projects/type_righter/build/CMakeFiles --progress-num=1,2 "Built target main"
-.PHONY : src/CMakeFiles/main.dir/all
+src/CMakeFiles/tpr_write.dir/all: src/CMakeFiles/typerighter_core.dir/all
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/tpr_write.dir/build.make src/CMakeFiles/tpr_write.dir/depend
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/tpr_write.dir/build.make src/CMakeFiles/tpr_write.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/mels/projects/type_righter/build/CMakeFiles --progress-num=1,2 "Built target tpr_write"
+.PHONY : src/CMakeFiles/tpr_write.dir/all
 
 # Build rule for subdir invocation for target.
-src/CMakeFiles/main.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mels/projects/type_righter/build/CMakeFiles 4
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/main.dir/all
+src/CMakeFiles/tpr_write.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mels/projects/type_righter/build/CMakeFiles 5
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/CMakeFiles/tpr_write.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mels/projects/type_righter/build/CMakeFiles 0
-.PHONY : src/CMakeFiles/main.dir/rule
+.PHONY : src/CMakeFiles/tpr_write.dir/rule
 
 # Convenience name for target.
-main: src/CMakeFiles/main.dir/rule
-.PHONY : main
+tpr_write: src/CMakeFiles/tpr_write.dir/rule
+.PHONY : tpr_write
 
 # codegen rule for target.
-src/CMakeFiles/main.dir/codegen:
-	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/mels/projects/type_righter/build/CMakeFiles --progress-num=1,2 "Finished codegen for target main"
-.PHONY : src/CMakeFiles/main.dir/codegen
+src/CMakeFiles/tpr_write.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/tpr_write.dir/build.make src/CMakeFiles/tpr_write.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/mels/projects/type_righter/build/CMakeFiles --progress-num=1,2 "Finished codegen for target tpr_write"
+.PHONY : src/CMakeFiles/tpr_write.dir/codegen
 
 # clean rule for target.
-src/CMakeFiles/main.dir/clean:
-	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/clean
-.PHONY : src/CMakeFiles/main.dir/clean
+src/CMakeFiles/tpr_write.dir/clean:
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/tpr_write.dir/build.make src/CMakeFiles/tpr_write.dir/clean
+.PHONY : src/CMakeFiles/tpr_write.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

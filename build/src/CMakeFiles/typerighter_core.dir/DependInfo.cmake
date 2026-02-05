@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/mels/projects/type_righter/src/dtk.c" "src/CMakeFiles/typerighter_core.dir/dtk.c.o" "gcc" "src/CMakeFiles/typerighter_core.dir/dtk.c.o.d"
+  "/Users/mels/projects/type_righter/src/stream_utils.c" "src/CMakeFiles/typerighter_core.dir/stream_utils.c.o" "gcc" "src/CMakeFiles/typerighter_core.dir/stream_utils.c.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.
