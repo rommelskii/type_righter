@@ -6,9 +6,9 @@
 
 #define KEY "WeDoNotTalkAboutTheKey"
 
-void stream_input(char* lbuf, size_t stream_len) 
+void stream_input(struct DTkL* buflist, char* lbuf, size_t stream_len) 
 {
-  struct DTkL* buflist = dtkl_initialize(1000);
+  //struct DTkL* buflist = dtkl_initialize(1000);
   //char buf[1024];
   //memset(buf, 0, sizeof(buf));
 
@@ -33,7 +33,7 @@ void stream_input(char* lbuf, size_t stream_len)
   }
   system("clear");
   
-  dtkl_print(buflist);
+  dtkl_print(buflist); //< remove this after debugging
   return;
 }
 

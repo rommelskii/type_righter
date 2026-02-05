@@ -1,13 +1,15 @@
 #ifndef STREAM_UTILS_H_
 #define STREAM_UTILS_H_
 
+#include "dtk.h" // for DTkL
+
 /**
 * @brief Receives lines from line buffer up to stream_len bytes
 *
 * @param lbuf Line buffer 
 * @param stream_len Maximum number of bytes to stream
 */
-void stream_input(char* lbuf, size_t stream_len);
+void stream_input(struct DTkL* buflist, char* lbuf, size_t stream_len);
 
 /**
 * @brief Obfuscates a character buffer by performing XOR with a key 
