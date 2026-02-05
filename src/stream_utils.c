@@ -26,7 +26,7 @@ void stream_input(struct DTkL* buflist, char* lbuf, size_t stream_len)
 
     if (strcmp(lbuf, "exit") == 0) break;
     struct DTk* newnode = dtk_create(lbuf, strlen(lbuf));
-    stream_obfuscate(newnode->ct, strlen(newnode->ct), KEY);
+  
     dtkl_append(buflist, newnode);
 
     ++idx;
