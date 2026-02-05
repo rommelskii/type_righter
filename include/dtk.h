@@ -1,3 +1,6 @@
+#ifndef DTK_H_
+#define DTK_H_
+
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
@@ -28,4 +31,4 @@ struct DTk* st_pop(struct DTkL* list);
 
 void dtkl_print(struct DTkL* list);
 
-
+#endif //DTK_H_
