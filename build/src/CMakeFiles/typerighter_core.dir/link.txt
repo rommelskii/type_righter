@@ -1,0 +1,2 @@
+/usr/bin/ar qc /Users/mels/projects/type_righter/lib/libtyperighter_core.a CMakeFiles/typerighter_core.dir/dtk.c.o
+/usr/bin/ranlib /Users/mels/projects/type_righter/lib/libtyperighter_core.a
