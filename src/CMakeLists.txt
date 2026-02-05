@@ -1,4 +1,4 @@
-add_library(typerighter_core dtk.c stream_utils.c)
+add_library(typerighter_core dtk.c stream_utils.c file_utils.c)
 
 set(SOURCES_LIST tpr_write.c)
 
