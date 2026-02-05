@@ -1,0 +1,49 @@
+# --- CMake & Build Artifacts ---
+build/
+bin/
+lib/
+CMakeCache.txt
+CMakeFiles/
+CMakeScripts/
+Makefile
+cmake_install.cmake
+install_manifest.txt
+compile_commands.json
+
+# --- Compiled Binaries (No extension on Mac/Linux) ---
+# Ignore the specific targets from your CMakeLists.txt
+dns_server
+dns_client
+dns_config
+line_parser_unit
+
+# --- Object files and Libraries ---
+*.o
+*.a
+*.so
+*.dylib
+
+# --- macOS System Files ---
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+
+# --- Emacs & IDE Files ---
+# Auto-save and backup files
+*~
+\#*\#
+.\#*
+auto-save-list/
+
+# Eglot/Project.el cache
+.eglot/
+.projectile
+.dir-locals.el
+
+# GDB/LLDB history
+.gdb_history
+.lldb_history
+
+
