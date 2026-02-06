@@ -5,6 +5,8 @@
 #include "stream_utils.h"
 #include "file_utils.h"
 
+#include <time.h>
+
 #define LINE_MAX 2048
 
 /**
@@ -23,26 +25,38 @@ int main()
   char lbuf[LINE_MAX];
   memset(lbuf, 0, sizeof(lbuf));
 
-  char choice[256];
-  memset(choice, 0, sizeof choice);
+  char filename[256];
+  memset(filename, 0, sizeof filename);
+
+  char obf_buf[256];
+  memset(obf_buf, 0, sizeof obf_buf);
+
+  char timebuf[256];
+  memset(timebuf, 0, sizeof timebuf);
+
+  time_t now;
+  time(&now);
+
+  struct tm* info;
+  info = localtime(&now);
+
+  strftime(timebuf, sizeof(filename), "%m-%d-%y-%H:%M:%S", info);
+
+  snprintf(filename, sizeof(filename), "%s.tpr", timebuf);
 
   struct DTkL* buflist = dtkl_initialize(1000); //< initialize with 1000 max tokens (macro this later)
   
-  for (;;)
-  {
-    stream_input(buflist, lbuf, sizeof lbuf); //< use the buflist
-    file_save(buflist, TEST_PATH);
-    file_obfuscate(TEST_PATH, "test_obf.tpr");
+  stream_input(buflist, lbuf, sizeof lbuf); //< use the buflist
+  file_save(buflist, filename);
 
-    printf("continue? (y/n): ");
+  char tempfilename[256];
+  memset(tempfilename, 0, sizeof(tempfilename));
+  snprintf(tempfilename, sizeof(tempfilename), "%s.temp", filename);
 
-    fgets(choice, sizeof(choice), stdin);
-    choice[strcspn(choice, "\n")] = '\0';
-    if (strncmp(choice, "y", 256) == 0) 
-    {
-      break;
-    }
-  }
+  file_obfuscate(filename, tempfilename);
+  remove(filename);
+  rename(tempfilename, filename);
+
   return 0;
 }
 
