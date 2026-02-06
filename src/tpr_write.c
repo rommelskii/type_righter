@@ -32,6 +32,7 @@ int main()
   {
     stream_input(buflist, lbuf, sizeof lbuf); //< use the buflist
     file_save(buflist, TEST_PATH);
+    file_obfuscate(TEST_PATH, "test_obf.tpr");
 
     printf("continue? (y/n): ");
 
