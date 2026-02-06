@@ -3,8 +3,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-//    file_save(buflist, TEST_PATH);
-
 void file_save(struct DTkL* buflist, const char* PATH) 
 {
   if (buflist == NULL || PATH == NULL) {
@@ -37,3 +35,45 @@ void file_save(struct DTkL* buflist, const char* PATH)
 
   fclose(pfile);
 }
+
+void file_obfuscate(const char* ORIGINAL_PATH, const char* RESULT_PATH) 
+{
+  FILE* fptr = fopen(ORIGINAL_PATH, "rb");
+  FILE* obf = fopen(RESULT_PATH, "wb");
+
+  if (!fptr || !obf)
+  {
+    perror("fopen failed");
+    return;
+  }
+  
+  char buf[FILE_OBF_LEN];
+  size_t bytes_read;
+  size_t total_processed = 0;
+  size_t key_len = strlen(KEY);
+
+  while ((bytes_read = fread(buf, 1, sizeof(buf), fptr)) > 0)
+  {
+    xor_cize_offset(buf, bytes_read, KEY, key_len, total_processed);
+
+    fwrite(buf, 1, bytes_read, obf);
+
+    total_processed += bytes_read;
+  }
+
+  fclose(fptr);
+  fclose(obf);
+
+  return;
+}
+
+void xor_cize_offset(char* str, size_t len, const char* key, size_t keylen, size_t file_offset)
+{
+    if (str == NULL || key == NULL || keylen == 0) return;
+
+    for (size_t i = 0; i < len; ++i) 
+    {
+        str[i] ^= key[(file_offset + i) % keylen];
+    }
+}
+
