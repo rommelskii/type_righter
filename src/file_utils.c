@@ -3,6 +3,24 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+
+void file_path_norm(const char* PATH, char* NEW_PATH)
+{
+  if (PATH == NULL || NEW_PATH == NULL) 
+  {
+    fprintf(stderr, "file_path_norm error: path or new path cannot be null\n");
+    return;
+  }
+
+  char buf[2048];
+  memset(buf, 0, sizeof(buf));
+  snprintf(buf, sizeof(buf), "/tmp/type_righter/%s", PATH);
+
+  memcpy(NEW_PATH, buf, strlen(buf)+1);
+
+  return;
+}
+
 void file_save(struct DTkL* buflist, const char* PATH) 
 {
   if (buflist == NULL || PATH == NULL) {

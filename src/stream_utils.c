@@ -29,9 +29,9 @@ void stream_input(struct DTkL* buflist, char* lbuf, size_t stream_len)
 
     ++idx;
   }
+
   system("clear");
   
-  dtkl_print(buflist); //< remove this after debugging
   return;
 }
 
