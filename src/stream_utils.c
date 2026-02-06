@@ -4,8 +4,6 @@
 #include "dtk.h"
 #include "stream_utils.h"
 
-#define KEY "WeDoNotTalkAboutTheKey"
-
 void stream_input(struct DTkL* buflist, char* lbuf, size_t stream_len) 
 {
   //struct DTkL* buflist = dtkl_initialize(1000);
