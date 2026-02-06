@@ -15,6 +15,7 @@ void stream_input(struct DTkL* buflist, char* lbuf, size_t stream_len)
   for (;;) 
   {
     system("clear");
+    printf(TPR_MSG);
     printf("%zu: ", idx);
 
     if (fgets(lbuf, stream_len, stdin) != NULL)

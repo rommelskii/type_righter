@@ -3,6 +3,8 @@
 
 #include "dtk.h" // for DTkL
 
+#define TPR_MSG "type_righter ver. 1.0 alpha\n(C) Rommel John Ronduen (rommel.ronduen2244@gmail.com)\n\n"
+
 /**
 * @brief Receives lines from line buffer up to stream_len bytes
 *
