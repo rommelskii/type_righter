@@ -28,9 +28,6 @@ int main()
   char filename[256];
   memset(filename, 0, sizeof filename);
 
-  char obf_buf[256];
-  memset(obf_buf, 0, sizeof obf_buf);
-
   char timebuf[256];
   memset(timebuf, 0, sizeof timebuf);
 
@@ -39,9 +36,7 @@ int main()
 
   struct tm* info;
   info = localtime(&now);
-
   strftime(timebuf, sizeof(filename), "%m-%d-%y-%H:%M:%S", info);
-
   snprintf(filename, sizeof(filename), "%s.tpr", timebuf);
 
   struct DTkL* buflist = dtkl_initialize(1000); //< initialize with 1000 max tokens (macro this later)
